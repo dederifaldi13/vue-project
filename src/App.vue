@@ -1,26 +1,25 @@
+<!-- eslint-disable max-len -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderView />
+  <Mainview />
+  <FooterView />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import HeaderView from './components/HeaderView.vue';
+import Mainview from './components/MainView.vue';
+import FooterView from './components/FooterView.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    HeaderView,
+    Mainview,
+    FooterView,
   },
 };
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+@import url(assets/style.css);
 </style>
